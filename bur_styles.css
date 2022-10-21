@@ -1,0 +1,67 @@
+.logo a{
+    color: rgb(232,230,227);
+    font-size: 1em;
+    margin-top:7px;
+    text-decoration: none;
+    float: left;
+}
+
+.top-menu {
+    float: right;
+    font-size: 14px;
+}
+
+.header-top {
+    z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.top-menu ul li {
+    display: inline-block;
+    padding: 5px 15px 0px 15px;
+}
+  
+  .top-menu ul li a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.col a {
+    color: rgb(209, 205, 199);
+    text-decoration: none;
+}
+
+
+.page1 {
+    position:fixed;
+    z-index: 1;
+    height: 1000px;
+    width:100%;
+    background: rgb(8, 3, 248);
+}
+
+.page2 {
+    margin-top: 800px;
+    position:absolute;
+    z-index: 2;
+    font-size:69px;
+    height: 1000px;
+    width:100%;
+    background: rgb(248, 3, 3);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
