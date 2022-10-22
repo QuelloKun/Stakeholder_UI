@@ -2,11 +2,36 @@
 
 <head>
   <link rel="stylesheet" href="bur_styles.css">
-  <script defer src="app.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+  <script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+
 </head>
 
 <body style="background-color:rgb(24,26,27); color:white;">
 
+    <script>
+        window.onload = function () {
+          lax.init()
+      
+          // Add a driver that we use to control our animations
+          lax.addDriver('scrollY', function () {
+            return window.scrollY
+          })
+      
+          // Add animation bindings to elements
+          lax.addElements('.selector', {
+            scrollY: {
+              translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                [0, 'screenWidth/2', 'screenWidth'],
+              ]
+            }
+          })
+        }
+      </script>
+
+    
 
     <div class="header-top">
         <div class="logo">
@@ -30,15 +55,31 @@
     
 
     <div class="parent" style="padding-bottom:4000px;">
+
             <div class="page1">
                 pag
             </div>
         
-        
-            <div class="page2">
-                <p class="hidden">hmmge</p>
+            
+            <div class="page2" id="stick-1">
+                <p class="hidden"><div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div></p>
             </div>
-        
+
+            <div class="page3">
+                
+            </div>
+
+            <script>
+              element = document.getElementById('stick-1')
+              console.log(element)
+                var waypoint = new Waypoint({
+                element: document.getElementById('stick-1'),
+                    handler: function() {
+                      document.getElementsByClassName("page2")[0].style.marginTop="0";
+                      document.getElementsByClassName("page2")[0].style.position="fixed";
+                    }
+                })
+            </script>
 
     </div>
 

@@ -53,15 +53,13 @@
     background: rgb(248, 3, 3);
 }
 
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translate(-100%);
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
-}
+/* 
+.page3 {
+    margin-top: 800px;
+    position:absolute;
+    z-index: 3;
+    font-size:69px;
+    height: 1000px;
+    width:100%;
+    background: rgb(11, 248, 3);
+} */
