@@ -60,25 +60,55 @@
                 pag
             </div>
         
-            
-            <div class="page2" id="stick-1">
-                <p class="hidden"><div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div></p>
+            <div class="switch" id="stick-1"></div>
+
+
+            <div class="page2" >
+              <div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div>
             </div>
 
+            <div class="pic-switch" id="stick-2"></div>
+
             <div class="page3">
-                
+              <div class="bc">pic desu</div>
             </div>
 
             <script>
-              element = document.getElementById('stick-1')
-              console.log(element)
-                var waypoint = new Waypoint({
-                element: document.getElementById('stick-1'),
-                    handler: function() {
+              console.log(document.getElementById("stick-1").offsetTop);
+
+              var waypoint = new Waypoint({
+              element: document.getElementById('stick-1'),
+                  handler: function(direction) {
+                    if (direction === "down"){
                       document.getElementsByClassName("page2")[0].style.marginTop="0";
                       document.getElementsByClassName("page2")[0].style.position="fixed";
                     }
-                })
+                    else if(direction === "up"){
+                      document.getElementsByClassName("page2")[0].style.marginTop="800px";
+                      document.getElementsByClassName("page2")[0].style.position="absolute";
+                    }
+                    
+                  }
+              })
+
+              var waypoint1 = new Waypoint({
+              element: document.getElementById('stick-2'),
+                  handler: function(direction) {
+                    if (direction === "down"){
+                      document.getElementsByClassName("page3")[0].style.marginTop="125px";
+                      document.getElementsByClassName("page3")[0].style.position="fixed";
+                    }
+                    else if(direction === "up"){
+                      document.getElementsByClassName("page3")[0].style.marginTop="1600px";
+                      document.getElementsByClassName("page3")[0].style.position="absolute";
+                    }
+                    
+                  }
+              })
+
+
+              
+              
             </script>
 
     </div>
