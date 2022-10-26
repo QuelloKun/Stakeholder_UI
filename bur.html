@@ -54,7 +54,7 @@
     <br><br><br>
     
 
-    <div class="parent" style="padding-bottom:4000px;">
+    <div class="parent" style="padding-bottom:6000px;">
 
             <div class="page1">
                 pag
@@ -65,7 +65,17 @@
 
             <div class="page2" >
               <div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div>
+              
+              <div class="para-1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="stop-phone" id="stick-phone-bottom">‎ </div>
+              <div class="para-4"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div>
+              
             </div>
+
+            
+
 
             <div class="pic-switch" id="stick-2"></div>
 
@@ -73,23 +83,28 @@
               <div class="bc">pic desu</div>
             </div>
 
+            <div class="page4">
+              <div class="contact">CONTACT US</div>
+              <br> blah <br> blah <br> blah <br> blah
+            </div>
+
             <script>
               console.log(document.getElementById("stick-1").offsetTop);
 
-              var waypoint = new Waypoint({
-              element: document.getElementById('stick-1'),
-                  handler: function(direction) {
-                    if (direction === "down"){
-                      document.getElementsByClassName("page2")[0].style.marginTop="0";
-                      document.getElementsByClassName("page2")[0].style.position="fixed";
-                    }
-                    else if(direction === "up"){
-                      document.getElementsByClassName("page2")[0].style.marginTop="800px";
-                      document.getElementsByClassName("page2")[0].style.position="absolute";
-                    }
+              // var waypoint = new Waypoint({
+              // element: document.getElementById('stick-1'),
+              //     handler: function(direction) {
+              //       if (direction === "down"){
+              //         document.getElementsByClassName("page2")[0].style.marginTop="0";
+              //         document.getElementsByClassName("page2")[0].style.position="fixed";
+              //       }
+              //       else if(direction === "up"){
+              //         document.getElementsByClassName("page2")[0].style.marginTop="800px";
+              //         document.getElementsByClassName("page2")[0].style.position="absolute";
+              //       }
                     
-                  }
-              })
+              //     }
+              // })
 
               var waypoint1 = new Waypoint({
               element: document.getElementById('stick-2'),
@@ -101,6 +116,21 @@
                     else if(direction === "up"){
                       document.getElementsByClassName("page3")[0].style.marginTop="1600px";
                       document.getElementsByClassName("page3")[0].style.position="absolute";
+                    }
+                    
+                  }
+              })
+
+              var waypoint1 = new Waypoint({
+              element: document.getElementById('stick-phone-bottom'),
+                  handler: function(direction) {
+                    if (direction === "down"){
+                      document.getElementsByClassName("page3")[0].style.marginTop="4350px";
+                      document.getElementsByClassName("page3")[0].style.position="absolute";
+                    }
+                    else if(direction === "up"){
+                      document.getElementsByClassName("page3")[0].style.marginTop="130px";
+                      document.getElementsByClassName("page3")[0].style.position="fixed";
                     }
                     
                   }
