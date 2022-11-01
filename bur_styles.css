@@ -40,7 +40,30 @@
     z-index: 1;
     height: 1000px;
     width:100%;
-    background: rgb(8, 3, 248);
+    background-image: url('https://ouraring.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fouraring.com%2Fimages%2Fsimple-home%2Fd-home-hero-img%402x.jpg%3Fs?ixlib=js-2.3.2&fm=webp&w=1920&s=8e2190df49a576547687c78165692d89');
+}
+
+.page1_sub {
+    transform: translate3d(300px,300px,0px);
+    
+}
+
+.shop_now {
+    background-color: rgb(24,26,27);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+.shop_now:hover {
+    background-color: #000000;
 }
 
 .page2 {
@@ -50,7 +73,7 @@
     font-size:69px;
     height: 4500px;
     width:100%;
-    background: rgb(248, 3, 3);
+    background: rgb(59,48,33);
 }
 
 .left {
@@ -75,12 +98,8 @@
     margin-top: 2700px;
 }
 
-.stop-phone {
-    margin-top: 3275px;
-}
-
 .para-4 {
-    margin-top: 325px;
+    margin-top: 3600px;
 }
 
 
@@ -96,21 +115,21 @@
     position: absolute;
 }
 
+.stop-phone {
+    margin-top: 4150px;
+    position: absolute;
+} 
 
-.bc {
-    text-align: center;
-    margin-top: 70%;
-}
 
 .page3 {
-    margin-top: 1600px;
+    margin-top: 1550px;
     position:absolute;
     z-index: 3;
     margin-left: 40%;
-    font-size:69px;
-    height: 700px;
-    width:20%;
-    background: rgb(11, 248, 3);
+    width:400px; 
+    height:750px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/78/Nokia_3310_Blue_R7309170_%28retouch%29.png);
+    background-size: 100% 100%;
 }
 
 .page4 {

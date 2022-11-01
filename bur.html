@@ -4,12 +4,12 @@
   <link rel="stylesheet" href="bur_styles.css">
   
   <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-  <script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+  
 
 </head>
 
-<body style="background-color:rgb(24,26,27); color:white;">
-
+<body style="background-color:rgb(24,26,27); color:white; font-family: sans-serif;">
+  <script src="lol.js"></script>
     <script>
         window.onload = function () {
           lax.init()
@@ -57,10 +57,9 @@
     <div class="parent" style="padding-bottom:6000px;">
 
             <div class="page1">
-                pag
+                <div class="page1_sub"><div style="font-size: 75px;">Paggar</div><br><div class="shop_now">Shop Now</div></div>
+                
             </div>
-        
-            <div class="switch" id="stick-1"></div>
 
 
             <div class="page2" >
@@ -69,8 +68,7 @@
               <div class="para-1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
               <div class="para-2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
               <div class="para-3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="stop-phone" id="stick-phone-bottom">‎ </div>
-              <div class="para-4"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div>
+              <div class="para-4"> <p class="left" id="pp"> left-text </p> <p class="right"> right-text </p> </div>
               
             </div>
 
@@ -78,9 +76,10 @@
 
 
             <div class="pic-switch" id="stick-2"></div>
+            
+            <div class="stop-phone" id="stick-phone-bottom"></div>
 
             <div class="page3">
-              <div class="bc">pic desu</div>
             </div>
 
             <div class="page4">
@@ -89,22 +88,7 @@
             </div>
 
             <script>
-              console.log(document.getElementById("stick-1").offsetTop);
-
-              // var waypoint = new Waypoint({
-              // element: document.getElementById('stick-1'),
-              //     handler: function(direction) {
-              //       if (direction === "down"){
-              //         document.getElementsByClassName("page2")[0].style.marginTop="0";
-              //         document.getElementsByClassName("page2")[0].style.position="fixed";
-              //       }
-              //       else if(direction === "up"){
-              //         document.getElementsByClassName("page2")[0].style.marginTop="800px";
-              //         document.getElementsByClassName("page2")[0].style.position="absolute";
-              //       }
-                    
-              //     }
-              // })
+              console.log(document.getElementById("pp").offsetTop);
 
               var waypoint1 = new Waypoint({
               element: document.getElementById('stick-2'),
