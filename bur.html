@@ -65,10 +65,10 @@
             <div class="page2" >
               <div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div>
               
-              <div class="para-1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-4"> <p class="left" id="pp"> left-text </p> <p class="right"> right-text </p> </div>
+              <div class="para-1" id="1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-2" id="2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-3" id="3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-4" id="4"> <p class="left" id="pp"> left-text </p> <p class="right"> right-text </p> </div>
               
             </div>
 
@@ -94,11 +94,11 @@
               element: document.getElementById('stick-2'),
                   handler: function(direction) {
                     if (direction === "down"){
-                      document.getElementsByClassName("page3")[0].style.marginTop="125px";
+                      document.getElementsByClassName("page3")[0].style.marginTop="50px";
                       document.getElementsByClassName("page3")[0].style.position="fixed";
                     }
                     else if(direction === "up"){
-                      document.getElementsByClassName("page3")[0].style.marginTop="1600px";
+                      document.getElementsByClassName("page3")[0].style.marginTop="1500px";
                       document.getElementsByClassName("page3")[0].style.position="absolute";
                     }
                     
@@ -109,11 +109,11 @@
               element: document.getElementById('stick-phone-bottom'),
                   handler: function(direction) {
                     if (direction === "down"){
-                      document.getElementsByClassName("page3")[0].style.marginTop="4350px";
+                      document.getElementsByClassName("page3")[0].style.marginTop="4250px";
                       document.getElementsByClassName("page3")[0].style.position="absolute";
                     }
                     else if(direction === "up"){
-                      document.getElementsByClassName("page3")[0].style.marginTop="130px";
+                      document.getElementsByClassName("page3")[0].style.marginTop="25px";
                       document.getElementsByClassName("page3")[0].style.position="fixed";
                     }
                     
