@@ -63,12 +63,13 @@
 
 
             <div class="page2" >
-              <div class="lax lax_preset_scaleInOut:112:0.6">hmmge</div>
+              <div class="lax lax_preset_fadeInOut:100:0 lax_preset_slideX:800:-500 lax_preset_scaleOut:235.5:0.6" style="text-align: center; font-size: 120px;">hmmge
+              <br>pagge</div>
               
-              <div class="para-1" id="1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-2" id="2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-3" id="3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
-              <div class="para-4" id="4"> <p class="left" id="pp"> left-text </p> <p class="right"> right-text </p> </div>
+              <div class="para-1" id="p1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-2" id="p2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-3" id="p3"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
+              <div class="para-4" id="p4"> <p class="left" id="pp"> left-text </p> <p class="right"> right-text </p> </div>
               
             </div>
 
@@ -119,6 +120,47 @@
                     
                   }
               })
+
+              var waypoint1 = new Waypoint({
+              element: document.getElementById('p1'),
+                  handler: function(direction) {
+                    if (direction === "down"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(13,20,30)";
+                    }
+                    else if (direction === "up"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(59,48,33)";
+                    }
+                    
+                  }
+              })
+
+              var waypoint1 = new Waypoint({
+              element: document.getElementById('p2'),
+                  handler: function(direction) {
+                    if (direction === "down"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(15,57,70)";
+                    }
+                    else if (direction === "up"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(13,20,30)";
+                    }
+                    
+                  }
+              })
+
+              var waypoint1 = new Waypoint({
+              element: document.getElementById('p3'),
+                  handler: function(direction) {
+                    if (direction === "down"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(248, 3, 236)";
+                    }
+                    else if (direction === "up"){
+                      document.getElementsByClassName("page2")[0].style.background="rgb(15,57,70)";
+                    }
+                    
+                  }
+              })
+
+              
 
 
 //               br
