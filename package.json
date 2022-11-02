@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "waypoints": "^4.0.1"
+  },
+  "scripts": {
+    "predeploy": "npm ci"
   }
 }
