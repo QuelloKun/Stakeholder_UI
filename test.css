@@ -1,0 +1,8 @@
+.text-reveal {
+  z-index: 3;
+  position: absolute;
+  height: 300px;
+  width: 250px;
+  background-color: rgb(59,48,33);
+  filter: drop-shadow(-0.35rem -0.35rem 0.4rem rgba(59,48,33,.5));
+} 

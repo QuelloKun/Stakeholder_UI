@@ -4,7 +4,10 @@
   <link rel="stylesheet" href="bur_styles.css">
   
   <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
+  <script src="https://cdn.jsdelivr.net/npm/textify.js@1.2.2/dist/Textify.min.js"></script>
 
 </head>
 
@@ -53,18 +56,35 @@
 
     <br><br><br>
     
+    <div class="text-reveal"></div>
+    <script>
+      $( window ).on('scroll', function(){
 
-    <div class="parent" style="padding-bottom:6000px;">
+      var scrollTop = $(this).scrollTop();
+      $( '.text-reveal' ).css({
+        transform: 'translateX('+  ( 3.25 * scrollTop ) +'px)',
+      });
+
+});
+    </script>
+
+    <div class="parent" >
 
             <div class="page1">
-                <div class="page1_sub"><div style="font-size: 75px;">Paggar</div><br><div class="shop_now">Shop Now</div></div>
-                
+                <div class="page1_sub"><div style="font-size: 75px;" data-textify>Paggar</div><br><div class="shop_now">Shop Now</div></div>
+                <script>
+                new Textify({
+                  once: false,
+                  easing: "easeInOut",
+                  fade:true
+                });
+                </script>
             </div>
 
 
             <div class="page2" >
-              <div class="lax lax_preset_fadeInOut:100:0 lax_preset_slideX:800:-500 lax_preset_scaleOut:235.5:0.6" style="text-align: center; font-size: 120px;">hmmge
-              <br>pagge</div>
+              
+              <div class="hm">The most complete wellness hub app,<br>powered by the smartest smart ring</div>
               
               <div class="para-1" id="p1"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
               <div class="para-2" id="p2"> <p class="left"> left-text </p> <p class="right"> right-text </p> </div> 
